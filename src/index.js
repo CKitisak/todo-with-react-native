@@ -22,7 +22,9 @@ class TodoApp extends Component {
 
   render() {
     return (
-      <View>
+      <View 
+        style={ styles.wrapper }
+      >
         <TodoInput onAdd={ this._addNewTodo } />
         <TodoList todoItems={ this.state.todoItems } />
       </View>

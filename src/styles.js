@@ -1,10 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
     flexDirection: 'column',
     backgroundColor: '#ddd',
+    ...Platform.select({
+      ios: {
+        marginTop: 20,
+      }
+    })
   },
   container: {
     paddingHorizontal: 20, 
@@ -30,6 +35,11 @@ const styles = StyleSheet.create({
     borderColor: 'darkgreen',
     backgroundColor: 'lightgreen',
     height: 35,
+    ...Platform.select({
+      ios: {
+        marginTop: 20,
+      }
+    })
   },
   todoAddButtonTitle: {
     lineHeight: 25,
