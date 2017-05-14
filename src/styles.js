@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   },
   todoAddButtonTitle: {
     lineHeight: 25,
-    height: 30
+    height: 35
   }
 });
 
